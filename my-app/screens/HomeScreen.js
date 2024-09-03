@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
 export default function HomeScreen({ navigation }) {
@@ -31,6 +32,7 @@ export default function HomeScreen({ navigation }) {
       />
       
       <Button title="Calcular Média" onPress={calcularMedia} />
+      <StatusBar style="auto" />
     </View>
   );
 }
